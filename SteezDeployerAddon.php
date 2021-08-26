@@ -11,8 +11,9 @@
 /**
  * SteezDeployerAddon
  *
- * @copyright Copyright © 2021 Steez Webdevelopment. All rights reserved.
- * @author    tommy@steez.nl
+ * @copyright 	Copyright © 2021 Steez Webdevelopment. All rights reserved.
+ * @author    	tommy@steez.nl
+ * @note		This should always be a submodule.
  */
 class SteezDeployerAddon
 {
