@@ -27,6 +27,7 @@ task('steez:clear-cache', function () {
 	// Clear all redis data
 	run("redis-cli flushall");
 	// Update the dropin if necessary
+	run("/usr/local/bin/wp --path='{{release_path}}' plugin activate redis-cache");
 	run("/usr/local/bin/wp --path='{{release_path}}' redis update-dropin");
 	// Flush all WP cache, transients and such
 	run("/usr/local/bin/wp --path='{{release_path}}' cache flush");
