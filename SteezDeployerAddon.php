@@ -129,7 +129,7 @@ class SteezDeployerAddon
 					$reset_permissions = $this->cwApi->call_cloudways_api('POST', '/app/manage/reset_permissions', $acces_token_object->access_token, [
 						'server_id' => WP_CLOUDWAYS_SERVER_ID,
 						'app_id' => WP_CLOUDWAYS_APP_ID,
-						'ownership' => 'master_user'
+						'ownership' => 'sys_user'
 					]);
 					if (!empty($reset_permissions->status)) {
 						WP_CLI::line(sprintf('Reset the permissions with operation id %s', $reset_permissions->operation_id));
